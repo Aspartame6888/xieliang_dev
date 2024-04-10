@@ -11,6 +11,7 @@ import {
   useColorModeValue,
   useTheme,
 } from "@interchain-ui/react";
+import MyComponent from "../components/my/MyComponent"
 
 function CreateCosmosApp({ Component, pageProps }: AppProps) {
   const { themeClass } = useTheme();
@@ -49,7 +50,7 @@ function CreateCosmosApp({ Component, pageProps }: AppProps) {
         >
           {/* TODO fix type error */}
           {/* @ts-ignore */}
-          <Component {...pageProps} />
+          <MyComponent></MyComponent>
         </Box>
       </ChainProvider>
     </ThemeProvider>
